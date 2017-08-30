@@ -21,5 +21,5 @@ Running Scripts
 ``` // run script 
 source('~/run_analysis.r') 
 ``` 
-3. Tidy data set "Tidy_UCI_data_set.csv" will be written to the working directory
+3. Tidy data set "Tidy_UCI_data_set.txt" will be written to the working directory
 
