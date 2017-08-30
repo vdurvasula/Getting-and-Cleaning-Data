@@ -41,4 +41,4 @@ extract_data_set <- bind_cols (merge_subject_data, extract_data_set)
 result_set <- extract_data_set %>% group_by(`Activity Id`,`Activity Name`, Subject) %>% summarise_all("mean")
 
 ## Download Tidy data set  
-write.table(x = result_set, file = "./Tidy_UCI_data_set.csv",sep = "/t",row.names = F)
+write.table(x = result_set, file = "./Tidy_UCI_data_set.txt",sep = "/t",row.names = F)
