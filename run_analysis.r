@@ -29,6 +29,7 @@ merge_set_activities <- left_join(merge_set_act_ids, activity_labels, by="V1")
 names(merge_set_activities) <- activity_col_labels
  
 ## Extract measurements related to mean & standard deviation 
+feature_labels$V2 <- gsub(pattern = "\\(\\)",replacement = "",feature_labels$V2)
 mean_std_measures <- feature_labels[grep("(mean|std)", feature_labels$V2)]
 names(merged_data_set) <- feature_labels[[2]]
 extract_data_set <- subset(merged_data_set, select = mean_std_measures$V2)
